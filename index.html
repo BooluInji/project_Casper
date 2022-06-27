@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casper_gen</title>
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <ul class="nav-bar">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3 class="title">Casper</h3>
+      <h4 class="password-display" id="passwordDisplay">password</h4>
+      <form id="passwordGeneratorForm" class="form">
+        <label for="">Password Length</label>
+        <div class="character-amount-contrainer">
+          <input
+            type="range"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountRange"
+          />
+          <input
+            class="number-input"
+            type="number"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountNumber"
+          />
+        </div>
+
+        <label for="includeSpecialCharacters">Special Characters</label>
+        <input type="checkbox" id="includeSpecialCharacters" class="checkbox" />
+        <label for="includeCapitalLetters">Captial Letters</label>
+        <input type="checkbox" id="includeCapitalLetters" class="checkbox" />
+        <label for="includeNumbers">Include Numbers</label>
+        <input type="checkbox" id="includeNumbers" class="checkbox" />
+        <button type="submit" class="button-submit">GENERATE</button>
+      </form>
+    </div>
+  </body>
+</html>

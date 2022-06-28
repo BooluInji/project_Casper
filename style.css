@@ -1,28 +1,72 @@
 body {
-  background-color: #242424;
-  color: #d4ecdd;
+  background-color: white;
+  color: black;
 }
 
-.nav-bar {
-  color: aliceblue;
+.p1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Neue Haas Grotesk Text Pro", sans-serif;
+  font-size: 11px;
+  margin-left: 5px;
+  max-width: 550px;
+}
+
+h1 {
+  font-family: "Neue Haas Grotesk Text Pro", sans-serif;
+  margin-top: 10vh;
+}
+
+.sectionheight {
+  margin-top: 10vh;
+}
+
+.center-p {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul-navbar {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-family: "Neue Haas Grotesk Text Pro", sans-serif;
+  text-decoration: underline;
+}
+
+.nav-item {
   list-style: none;
+  font-family: "Neue Haas Grotesk Text Pro", sans-serif;
+  text-decoration: underline;
+  margin-right: 2rem;
+  font-size: 13px;
+}
+
+.h1 {
+  font-family: "Neue Haas Grotesk Text Pro", sans-serif;
 }
 
 .container {
   background-color: #0a0a0a;
+  margin-top: 5vh;
+  margin-left: 1px;
   padding: 0.5rem;
   color: #d4ecdd;
-  position: relative;
-  margin: 20%;
-  margin-left: 35%;
   width: 360px;
   border-radius: 1rem;
   font-size: small;
   display: flex;
   justify-content: center;
-
   flex-direction: column;
   font-family: "Inter", sans-serif;
 }
@@ -35,6 +79,7 @@ body {
   column-gap: 3rem;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 
 .title {
@@ -98,4 +143,33 @@ body {
 
 .checkbox {
   margin-left: 65px;
+}
+
+.figma-casperimage {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.figmasketchtext {
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.casperimage {
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .ul-navbar,
+  .nav-item {
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sectionheight {
+    margin-top: 2vh;
+  }
 }
